@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-
 class LoginPage extends StatelessWidget{
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +19,6 @@ class LoginPage extends StatelessWidget{
                 labelText: "Email",
                 border: OutlineInputBorder(),
               ),
-
             ),
             SizedBox(height: 20),
             TextField(
@@ -40,7 +37,6 @@ class LoginPage extends StatelessWidget{
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Text("Login Successful")),
                 );
-                
               },
               child: Text("LOGIN"),
             ),
@@ -48,7 +44,5 @@ class LoginPage extends StatelessWidget{
         ),
       ),
     );
-
   }
-  
 }
