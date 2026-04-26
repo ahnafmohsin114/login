@@ -35,8 +35,8 @@ class LoginPage extends StatelessWidget{
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: (){
-                print("Email: ${emailController.text}");
-                print("Password: ${passwordController.text}");
+                ("Email: ${emailController.text}");
+                ("Password: ${passwordController.text}");
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Text("Login Successful")),
                 );
